@@ -1,0 +1,28 @@
+.button__primary {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 700;
+  padding: 16px 25px;
+  display: block;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  background: linear-gradient(180deg, #f39c32 0%, #cb8734 100%);
+  box-shadow: 0px 4px 4px rgba(203, 135, 52, 0.2);
+  border-radius: 4px;
+}
+
+.next__btn {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  color: $color-primary;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+
+  &-icon {
+    margin-right: 12px;
+  }
+}

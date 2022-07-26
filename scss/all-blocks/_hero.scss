@@ -1,0 +1,41 @@
+.hero {
+  // position: relative;
+  padding: 0 0 276px;
+  background-color: $color-bg;
+
+  &__container {
+    display: flex;
+  }
+
+  &__left {
+    padding-top: 120px;
+    margin-right: 6px;
+  }
+
+  &__btn {
+    margin-right: 44px;
+  }
+  &__btn-box {
+    display: flex;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 37px;
+    line-height: 50px;
+    margin-bottom: 8px;
+  }
+  &__summary {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 26px;
+  }
+
+  &__right-img {
+    width: 615px;
+    height: 506px;
+  }
+}
