@@ -1,0 +1,64 @@
+.catalog {
+  padding: 0 0 45px;
+  margin-top: -100px;
+  &__container {
+    background-image: url("../images/catalog/catalog-bg.png");
+    background-position: right;
+    background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  &__title {
+    @include section-title;
+    margin-bottom: 21px;
+  }
+
+  &__cards {
+    background: #ffffff;
+    box-shadow: 0px 0px 30px rgba(43, 42, 40, 0.08);
+    border-radius: 0px 40px 0px 0px;
+    max-width: 370px;
+    padding: 5px;
+
+    &-body {
+      padding: 36px 19px 50px 50px;
+    }
+    &-body-3 {
+      padding: 50px 60px 63px 50px;
+    }
+
+    &-title {
+      @include cards-title;
+      margin-bottom: 9px;
+    }
+    &-text {
+      @include cards-summary;
+      margin-bottom: 14px;
+    }
+  }
+
+  &__wrapp {
+    display: grid;
+    // grid-template-columns: 770px;
+    gap: 20px;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  &__cards-1 {
+    grid-row-start: 1;
+    grid-column-end: 1;
+  }
+  &__cards-2 {
+    grid-row-start: 1;
+    grid-column-end: 2;
+  }
+  &__cards-3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+
+    display: flex;
+    max-width: 770px;
+  }
+}

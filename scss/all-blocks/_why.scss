@@ -1,11 +1,8 @@
 .why {
-  // position: absolute;
   margin: 0 auto;
-  // transform: translate(-50%, 22%);
-
   padding: 56px 30px 50px 60px;
   background: #ffffff;
-
+  transform: translateY(-200px);
   box-shadow: 0px 0px 30px rgba(43, 42, 40, 0.08);
   border-radius: 8px;
   width: 1170px;
@@ -18,12 +15,18 @@
   &__list {
     flex-wrap: wrap;
     display: flex;
+    justify-content: space-between;
   }
 
   &__item {
     max-width: 250px;
     &-icon {
       margin-bottom: 21px;
+    }
+    &-title {
+      @include cards-summary;
+      font-weight: 700;
+      margin-bottom: 8px;
     }
     &-text {
       @include cards-summary;

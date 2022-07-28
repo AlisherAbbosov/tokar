@@ -4,6 +4,14 @@
   font-size: 36px;
   line-height: 58px;
 }
+
+@mixin cards-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+}
+
 @mixin cards-summary {
   font-style: normal;
   font-weight: 300;
