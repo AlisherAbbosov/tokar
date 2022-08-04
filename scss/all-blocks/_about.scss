@@ -1,0 +1,98 @@
+.about {
+  position: relative;
+  padding: 140px 0 147px;
+  &__title {
+    @include section-title;
+    margin-bottom: 8px;
+  }
+
+  &__wrap {
+    position: relative;
+    margin-bottom: 193px;
+  }
+
+  &__info {
+    position: absolute;
+
+    background: #ffffff;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 30px rgba(43, 42, 40, 0.08);
+    border-radius: 8px;
+    width: 570px;
+    height: 190px;
+    display: flex;
+    padding: 38px 51px 35px 43px;
+
+    &-icon {
+      width: 54px;
+      height: 55.23px;
+      margin-right: 22px;
+    }
+
+    &-title {
+      @include cards-title;
+      font-size: 24px;
+      line-height: 30px;
+      margin-bottom: 6px;
+    }
+
+    &-text {
+      @include cards-summary;
+      font-size: 16px;
+      line-height: 26px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 38px;
+  }
+
+  &__item {
+    max-width: 270px;
+    &-top {
+      border-bottom: 2px solid $color-primary;
+      padding-bottom: 29px;
+    }
+    &-title {
+      @include cards-title;
+      font-size: 36px;
+      color: $color-primary;
+      &-num {
+        font-size: 60px;
+        line-height: 30px;
+      }
+    }
+    &-bottom {
+      @include cards-summary;
+      padding: 18px 10px 0 0;
+      font-size: 16px;
+      line-height: 30px;
+    }
+  }
+
+  &::before {
+    content: " ";
+    background-image: url("../../images/about/about-before.svg");
+    // background-position: center;
+    width: 489px;
+    height: 445px;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    position: absolute;
+  }
+  &::after {
+    content: " ";
+    background-image: url("../../images/about/about-after.png");
+    // background-position: center;
+    width: 723px;
+    height: 594px;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+  }
+}
